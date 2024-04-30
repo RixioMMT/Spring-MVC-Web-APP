@@ -10,16 +10,16 @@
     <input type="hidden" th:field="*{id}"/>
 
     <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" th:field="*{name}"><br>
+    <input type="text" id="name" name="name" th:field="*{name}" required><br>
 
     <label for="lastName">Last Name:</label><br>
-    <input type="text" id="lastName" name="lastName" th:field="*{lastName}"><br>
+    <input type="text" id="lastName" name="lastName" th:field="*{lastName}" required><br>
 
     <label for="age">Age:</label><br>
-    <input type="number" id="age" name="age" th:field="*{age}"><br>
+    <input type="number" id="age" name="age" th:field="*{age}" min="0" required><br>
 
     <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" th:field="*{email}"><br>
+    <input type="email" id="email" name="email" th:field="*{email}" required><br>
 
     <input type="submit" value="Save Changes">
 </form>

@@ -15,7 +15,7 @@ public class UserDaoImp implements UserDao {
     private EntityManager entityManager;
     @Override
     public List<User> findAll() {
-        return entityManager.createNativeQuery("SELECT * FROM Users", User.class).getResultList();
+        return entityManager.createNativeQuery("SELECT * FROM userstable", User.class).getResultList();
     }
     @Override
     public void save(User user) {
